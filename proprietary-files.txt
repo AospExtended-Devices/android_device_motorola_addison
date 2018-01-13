@@ -78,6 +78,7 @@ vendor/lib/libflash_pmic.so
 vendor/lib/libflash_sky81298.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
+vendor/lib/libllvd_smore.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -174,8 +175,6 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libseemore.so
 vendor/lib/libtrueportrait.so
-vendor/lib/libts_detected_face_hal.so
-vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
 
 # Chromatix
@@ -391,9 +390,6 @@ vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
 vendor/lib/libOmxWmaDec.so
 
-# Moto
-bin/batt_health
-
 # Network
 -priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib/libQtiTether.so
@@ -425,6 +421,7 @@ vendor/lib/libsmemlog.so
 
 # Radio
 -app/datastatusnotification/datastatusnotification.apk
+-app/QtiTelephonyService/QtiTelephonyService.apk|763deb39a73c7d2bd3b67524722ec4ef4f0d1f18
 bin/netmgrd
 bin/pm-proxy
 bin/pm-service
@@ -437,11 +434,14 @@ etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/permissions/qcrilhook.xml
 -framework/qcrilhook.jar
+-framework/qti-telephony-common.jar|3cea332c3cc179fae5691763c8e55027cc76ffc8
+-framework/QtiTelephonyServicelibrary.jar|0507664eb8751cba3dcf0f4ab5b49d871455ddd9
 lib/libadropbox.so
 lib/libmdmcutback.so
 lib/libmotext_inf.so
 lib/libqmimotext.so
 -lib/libril.so
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
