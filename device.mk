@@ -50,9 +50,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-# Motorola Camera permissions
+# Motorola Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
+
+PRODUCT_PACKAGES += \
+    MotCamera
 
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
